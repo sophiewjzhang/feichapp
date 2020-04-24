@@ -1,0 +1,15 @@
+.container{
+    width: 100%;
+    display: block;
+    height: 3em;
+    border-top: solid 1px #1ca9c9;
+    .content {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+div#app-footer{
+    position: fixed;
+    bottom: 2em;
+    width: 100%;
+}

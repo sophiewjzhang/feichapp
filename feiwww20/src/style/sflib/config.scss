@@ -1,0 +1,63 @@
+/**
+* the variables to be customized.
+*/
+$em-base: 14px !default;
+//control whether to display in em or px, with default of em. Set true to use px instead of em.
+$em-disabled: false !default;
+/*
+* space variables, used for padding and margin.
+*/
+$s-xs: 1;
+$s-s: 2;
+$s-m: 3;
+$s-l: 4;
+$s-xl: 5;
+$margin-base: 3px;
+$padding-base: 3px;
+/**
+* global border styles
+*/
+$global-border-size: 1px !default;
+$global-border-radius: 5px !default;
+$global-border-style: solid !default;
+$global-border-color: #cccccc !default;
+/**
+* grey colors
+*/
+$grey: #cccccc;
+$dark-grey: darken($grey, 50%);
+$light-grey: lighten($grey, 50%);
+/**
+* color pallete
+*/
+$white: #ffffff;
+$black: #000000;
+$link: #1cA9C9;
+$text: #333333;
+$background: #1A4876; 
+$primary: #80DAEB;
+$secondary: #1ca9c9;
+$highlight: #FFCF48;
+$warning: #ffff00;
+$error: #FF0000;
+
+/**
+* button styles
+*/
+$button-border-radius: 5px !default;
+$button-label-color: #ffffff;
+$button-background-color: #0011ff;
+$button-s-size-vertical: 3px;
+$button-s-size-horizontal: 3px;
+$button-m-size-vertical: 5px;
+$button-m-size-horizontal: 5px;
+$button-l-size-vertical: 8px;
+$button-l-size-horizontal: 8px;
+$button-xl-size-vertical: 10px;
+$button-xl-size-horizontal: 10px;
+/**
+* global typography style
+*/
+$weight-normal: 300 !default;
+$weight-bold: 500 !default;
+$weight-light: 100 !default;
