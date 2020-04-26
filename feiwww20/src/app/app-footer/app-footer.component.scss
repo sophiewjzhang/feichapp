@@ -1,8 +1,9 @@
 .container{
     width: 100%;
     display: block;
+    background-color: #efefef;
     height: 3em;
-    border-top: solid 1px #1ca9c9;
+    border-top: dotted 1px #1ca9c9;
     .content {
         width: 80%;
         margin: 10px auto;
@@ -10,6 +11,6 @@
 }
 div#app-footer{
     position: fixed;
-    bottom: 2em;
+    bottom: 0em;
     width: 100%;
 }

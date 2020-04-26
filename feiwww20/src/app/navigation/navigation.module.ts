@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 //local imports
 import { NavBarTopComponent } from './nav-bar-top/nav-bar-top.component';
 import { NavFooterComponent } from './nav-footer/nav-footer.component';
+import { NavigationConfigService } from './navigation-config.service';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { NavFooterComponent } from './nav-footer/nav-footer.component';
   exports: [
     NavBarTopComponent,
     NavFooterComponent,
-  ]
+  ],
+  providers: [NavigationConfigService]
 })
 export class NavigationModule { }
