@@ -2,12 +2,11 @@
   <div class="content">
     <div id="logo"></div>
     <div id="nav-items">
-      <div *ngFor = "let key of map.keys()">
-        {{key}}:{{map.get(key)}}
-      </div>
       <ul>
-        <li *ngFor = "let item of navItems.keys()">
-          {{teim}}
+        <li *ngFor = "let item of navItems | keyvalue" >
+          <a href="/content/{{item.key}}">
+            {{item.value}}
+          </a>
         </li>
       </ul>
     </div>

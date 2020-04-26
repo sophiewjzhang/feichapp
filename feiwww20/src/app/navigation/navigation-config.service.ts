@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { initDomAdapter } from '@angular/platform-browser/src/browser';
-import { mapChildrenIntoArray } from '@angular/router/src/url_tree';
+//import { initDomAdapter } from '@angular/platform-browser/src/browser';
+//import { mapChildrenIntoArray } from '@angular/router/src/url_tree';
 
 export class NavItem {
   name: String;
@@ -11,7 +11,6 @@ export class NavItem {
   }
 }
 
-// @Injectable( )
 @Injectable({
   providedIn: 'root',
 })

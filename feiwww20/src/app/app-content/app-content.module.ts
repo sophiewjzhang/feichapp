@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 //local imports
 import { NavigationModule } from '../navigation/navigation.module';
-import { AppFooterComponent } from '../app-footer/app-footer.component';
-
 import { AppContentRoutingModule} from './app-content-routing.module';
 
 import { AppContentComponent } from './app-content.component';
@@ -24,7 +22,6 @@ import { ContactComponent } from './components/contact/contact.component';
     ServiceComponent,
     ProductComponent,
     ContactComponent,
-    AppFooterComponent,
   ],
   exports: [
     AppContentComponent,
