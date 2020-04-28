@@ -1,0 +1,25 @@
+div#desktop-nav-top{
+    background-color: #FFFFFF;
+    width: 100%;
+    .content {
+        width: 80%;
+        margin: 0 auto;
+        display: table;
+    }
+    .content div{
+        display: table-cell;
+    }
+
+    div#nav-items {
+        //width: 100%;
+        li {
+            display: inline;
+            padding-right: 1em;
+        }
+    }
+    div#icon-settings{
+        display:none;
+        width: 80px;
+        height: 80px;
+    }
+}

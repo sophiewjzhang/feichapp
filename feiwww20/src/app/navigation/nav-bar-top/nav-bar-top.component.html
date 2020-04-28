@@ -1,15 +1,4 @@
-<div id="nav-top" class="container">
-  <div class="content">
-    <div id="logo"></div>
-    <div id="nav-items">
-      <ul>
-        <li *ngFor = "let item of navItems | keyvalue" >
-          <a href="/content/{{item.key}}">
-            {{item.value}}
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div id="icon-settings">Settings</div>
-  </div>
+<div id="nav-top" class="screen">
+  <fweb-desktop-nav-top></fweb-desktop-nav-top>
+  <fweb-mobile-nav-top></fweb-mobile-nav-top>
 </div>

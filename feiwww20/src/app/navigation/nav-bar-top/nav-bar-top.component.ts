@@ -1,28 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 import {  NavigationConfigService } from '../navigation-config.service';
 
 @Component({
   selector: 'fweb-nav-bar-top',
   templateUrl: './nav-bar-top.component.html',
-  styleUrls: ['./nav-bar-top.component.scss']
+  styleUrls: ['./nav-bar-top.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class NavBarTopComponent implements OnInit {
   navItems;
   itemSet: {[key: number]: string} = {2: 'foo', 1: 'bar'};
 
   map = new Map([['about', 'About us'], ['service', 'Service']]);
-  private navConfig: NavigationConfigService;
 
-  constructor() {
-    this.navConfig = new NavigationConfigService();
-    this.navConfig.setItem('about', 'About us');
-    this.navConfig.setItem('service', 'Service');
-    this.navConfig.setItem('product', 'Product');
-    this.navConfig.setItem('contact', 'Contact');
-    this.navItems = this.navConfig.getItems();
+  constructor(private navConfig: NavigationConfigService) {
+    //this.navConfig = new NavigationConfigService();
+    this.navItems = this.navConfig.items;
     console.log('nav bar-----');
-    console.log( JSON.stringify(this.navItems));
+    console.log( JSON.stringify(this.navConfig));
 
     //this.itemSet = this.navConfig.getItems();
    }

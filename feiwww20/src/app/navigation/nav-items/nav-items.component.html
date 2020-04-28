@@ -1,0 +1,8 @@
+
+<ul>
+    <li *ngFor = "let item of navItems | keyvalue" (click)="onItem($event, item.key)">
+    <a href="/content/{{item.key}}">
+        {{item.value}}
+    </a>
+    </li>
+</ul>
