@@ -8,11 +8,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppFooterComponent } from './app-footer/app-footer.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { LandingComponent } from './landing/landing.component';
 @NgModule({
   declarations: [
     AppComponent,
     AppFooterComponent,
     NotFoundComponent,
+    LandingComponent,
   ],
   imports: [
     BrowserModule,

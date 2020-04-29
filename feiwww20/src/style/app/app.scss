@@ -1,5 +1,11 @@
 body {
     background-color:#1A4876; 
+    background-image: url('/assets/bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position-y: 250px;
+    background-position-x: 50%;
 }
 .highlight {
     color: #ffcf48;
