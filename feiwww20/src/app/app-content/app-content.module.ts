@@ -5,6 +5,7 @@ import { NavigationModule } from '../navigation/navigation.module';
 import { AppContentRoutingModule} from './app-content-routing.module';
 
 import { AppContentComponent } from './app-content.component';
+import { LandingComponent } from './components/landing//landing.component';
 import { AboutComponent } from './components/about/about.component';
 import { ServiceComponent } from './components/service/service.component';
 import { ProductComponent } from './components/product/product.component';
@@ -18,6 +19,7 @@ import { ContactComponent } from './components/contact/contact.component';
   ],
   declarations: [
     AppContentComponent,
+    LandingComponent,
     AboutComponent,
     ServiceComponent,
     ProductComponent,

@@ -2,21 +2,15 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 //local imports
 import { NotFoundComponent } from './not-found/not-found.component';
-import { LandingComponent } from './landing//landing.component';
 
 const routes: Routes = [
   {
-    path: 'content',
+    path: '',
     loadChildren: () => import('./app-content/app-content.module').then(m => m.AppContentModule)
   },
   {
-    path: 'home',
-    component: LandingComponent,
-  },
-  {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    path: 'products',
+    loadChildren: () => import('./products/products.module').then(m => m.ProductsModule)
   },
   {
     path: '**',

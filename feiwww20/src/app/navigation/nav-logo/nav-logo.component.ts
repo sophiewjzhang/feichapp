@@ -18,7 +18,7 @@ export class NavLogoComponent implements OnInit {
 
   goHome(e) {
     e.preventDefault();
-    this.route.navigate([`/home`]);
+    this.route.navigate([`/`]);
   }
 
 }

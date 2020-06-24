@@ -4,23 +4,24 @@ import { NgModule } from '@angular/core';
 import { NavigationModule } from './navigation/navigation.module';
 import { AppContentModule } from './app-content/app-content.module'
 import { AppRoutingModule } from './app-routing.module';
+import { ProductsModule } from './products/products.module';
 //local imports
 import { AppComponent } from './app.component';
 import { AppFooterComponent } from './app-footer/app-footer.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { LandingComponent } from './landing/landing.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     AppFooterComponent,
     NotFoundComponent,
-    LandingComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NavigationModule,
     AppContentModule,
+    ProductsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

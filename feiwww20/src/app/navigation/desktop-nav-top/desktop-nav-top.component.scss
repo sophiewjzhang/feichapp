@@ -2,22 +2,25 @@ div#desktop-nav-top {
   background-color: #FFFFFF;
   width: 100%;
 
-  .content {
+  #nav-content{
     width: 80%;
     margin: 0 auto;
     display: block;
+    #nav-logo {
+      cursor: pointer;
+    }
+
+    #nav-items {
+      li {
+        display: inline;
+        padding-right: 1em;
+      }
+    }  
   }
 
-  .content div.nav-cell {
-    display: inline-block;
-  }
-
-  div#nav-items {
-
-    //width: 100%;
-    li {
-      display: inline;
-      padding-right: 1em;
+  .content {
+    .nav-cell {
+      display: inline-block;
     }
   }
 

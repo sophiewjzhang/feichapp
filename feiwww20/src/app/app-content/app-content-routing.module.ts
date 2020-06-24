@@ -5,12 +5,13 @@ import { RouterModule, Routes } from '@angular/router';
 //import { AppFooterComponent } from '../app-footer/app-footer.component';
 import { NavigationModule } from '../navigation/navigation.module';
 import { AppContentComponent } from './app-content.component';
+import { LandingComponent } from './components/landing//landing.component';
 import { AboutComponent } from './components/about/about.component';
 import { ServiceComponent } from './components/service/service.component';
 import { ProductComponent } from './components/product/product.component';
 import { ContactComponent } from './components/contact/contact.component';
 
-import {  NavigationConfigService } from '../navigation/navigation-config.service';
+import { NavigationConfigService } from '../navigation/navigation-config.service';
 
 /* const navServer = new NavigationConfigService();
 
@@ -25,6 +26,10 @@ let contentRoutes: Routes = [
     path: '',
     component: AppContentComponent,
     children: [
+      {
+        path: '',
+        component: LandingComponent,
+      },
       {
         path: 'about',
         component: AboutComponent,
@@ -48,7 +53,7 @@ let contentRoutes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forChild(contentRoutes),
-    NavigationModule ,
+    NavigationModule,
   ],
   exports: [RouterModule]
 })

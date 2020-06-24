@@ -15,12 +15,7 @@ export class NavBarTopComponent implements OnInit {
   map = new Map([['about', 'About us'], ['service', 'Service']]);
 
   constructor(private navConfig: NavigationConfigService) {
-    //this.navConfig = new NavigationConfigService();
     this.navItems = this.navConfig.items;
-    console.log('nav bar-----');
-    console.log( JSON.stringify(this.navConfig));
-
-    //this.itemSet = this.navConfig.getItems();
    }
 
   ngOnInit() {

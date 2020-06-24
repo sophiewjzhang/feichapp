@@ -15,7 +15,7 @@ export const NAVCONFIG: NavigationConfigService = {
   items: {
     'about': 'About us',
     'service': 'Service',
-    'product': 'Product',
+    'products': 'Product',
     'contact': 'Contact',
   }
 

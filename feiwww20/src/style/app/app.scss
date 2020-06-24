@@ -1,19 +1,39 @@
 body {
-    background-color:#1A4876; 
-    background-image: url('/assets/bg.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
-    background-position-y: 250px;
-    background-position-x: 50%;
-}
-.highlight {
-    color: #ffcf48;
-}
-.primary {
-    color: #1ca9c9;
+  background-color: #1A4876;
+  background-image: url('/assets/bg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position-y: 250px;
+  background-position-x: 50%;
 }
 
-div#app-content{
+.highlight {
+  color: #ffcf48;
+}
+
+.primary {
+  color: #1ca9c9;
+}
+
+a {
+  cursor: grab;
+}
+
+.container {
+  width: 100%;
+  display: block;
+
+  .content {
+    min-height: 10em;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
     background-color: #efefef;
+  }
+}
+
+
+div#app-content {
+  background-color: #efefef;
 }
