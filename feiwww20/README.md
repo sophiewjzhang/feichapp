@@ -25,3 +25,18 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Project specific help
+
+How to update the iOS app page?
+When a new buld is release in the apple store, update the product page with the new version info.
+-Project url pattern
+https://apps.apple.com/us/app/id{productId}
+Find the project id in Apple store connect under the section "General" - "App Information" - "Apple ID". 
+For example, if the Apple is is 511149219, the updated product url should be:
+https://apps.apple.com/us/app/id1511149219
+
+
+
+
+
