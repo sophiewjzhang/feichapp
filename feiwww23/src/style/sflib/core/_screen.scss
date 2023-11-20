@@ -1,0 +1,33 @@
+/*
+media query class.
+*/
+$width_sm: 375px;
+$width_med: 768px;
+
+.screen .responsible {
+  display: none;
+}
+
+@media screen and (max-width: #{$width_sm}) {
+  .screen {
+    .small {
+      display: block !important;
+    }
+  }
+}
+
+@media screen and (max-width: $width_med) and (min-width: #{$width_sm}) {
+  .screen {
+    .medium {
+      display: block !important;
+    }
+  }
+}
+
+@media screen and (min-width: $width_med+1) {
+  .screen {
+    .large {
+      display: block !important;
+    }
+  }
+}

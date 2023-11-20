@@ -1,0 +1,10 @@
+div#av-top{
+    display: block;
+}
+a {
+    text-decoration: none;
+    color:#1ca9c9;
+    &:hover,&:active{
+        color:#1ca9c9;
+    }
+}

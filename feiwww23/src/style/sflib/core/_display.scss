@@ -1,0 +1,31 @@
+/*********************
+* display styles:
+* display-none, display-hidden, display-block, display-inline-block, display-table, display-table-cell
+* visible, hidden, collapse
+*********************/
+@each $value in none, inline, block, inline-block, table, table-cell {
+  .display-#{$value}{
+    display: $value;
+  }
+}
+@each $value in visible, hidden, collapse {
+  .#{$value}{
+    visibility: $value;
+  }
+}
+/*********************
+overflow
+*********************/
+@each $value in hidden, auto{
+  .overflow-#{$value}{
+    overflow: $value;
+  }
+}
+.overflow-v-scroll {
+  overflow-y: auto;//auto to hide when short
+  overflow-x: hidden;
+}
+.overflow-h-scroll {
+  overflow-x: auto;//auto to hide when short
+  overflow-y: hidden;
+}
