@@ -1,25 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 //local imports
-//import { NavigationModule } from '../navigation/navigation.module';
-//import { AppFooterComponent } from '../app-footer/app-footer.component';
-import { NavigationModule } from '../navigation/navigation.module';
 import { AppContentComponent } from './app-content.component';
-import { LandingComponent } from './components/landing//landing.component';
-import { AboutComponent } from './components/about/about.component';
-import { ServiceComponent } from './components/service/service.component';
-import { ProductComponent } from './components/product/product.component';
-import { ContactComponent } from './components/contact/contact.component';
-
-import { NavigationConfigService } from '../navigation/navigation-config.service';
-
-/* const navServer = new NavigationConfigService();
-
-navServer.setItem('about', 'About us');
-navServer.setItem('service', 'Service');
-navServer.setItem('product', 'Product');
-navServer.setItem('contact', 'Contact');
-console.log(navServer.getitemKeys()) */
+import { LandingComponent } from './landing//landing.component';
+import { AboutComponent } from './about/about.component';
+import { ServiceComponent } from './service/service.component';
+import { ContactComponent } from './contact/contact.component';
+import { ProductSummaryComponent } from './products/product-summary/product-summary.component';
+import { ChineseWordBoardComponent } from './products/chinese-word-board/chinese-word-board.component';
 
 let contentRoutes: Routes = [
   {
@@ -28,6 +16,10 @@ let contentRoutes: Routes = [
     children: [
       {
         path: '',
+        component: ChineseWordBoardComponent,
+      },
+      {
+        path: 'landing',
         component: LandingComponent,
       },
       {
@@ -39,8 +31,8 @@ let contentRoutes: Routes = [
         component: ServiceComponent,
       },
       {
-        path: 'product',
-        component: ProductComponent,
+        path: 'products',
+        component: ChineseWordBoardComponent,
       },
       {
         path: 'contact',
@@ -53,7 +45,6 @@ let contentRoutes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forChild(contentRoutes),
-    NavigationModule,
   ],
   exports: [RouterModule]
 })
