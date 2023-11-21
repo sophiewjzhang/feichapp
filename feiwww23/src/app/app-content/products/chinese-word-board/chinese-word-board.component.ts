@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class ChineseWordBoardComponent implements OnInit {
 
   numScreenShots = [
-    '/assets/chwb1/chwb_screen_portraint55_0.jpg', 
-    '/assets/chwb1/chwb_screen_portraint55_1.jpg', 
-    '/assets/chwb1/chwb_screen_portraint55_2.jpg', 
-    '/assets/chwb1/chwb_screen_portraint55_3.jpg', 
+    '/assets/chwb1/chwb_screen_portraint55_0.png', 
+    '/assets/chwb1/chwb_screen_portraint55_1.png', 
+    '/assets/chwb1/chwb_screen_portraint55_2.png', 
+    '/assets/chwb1/chwb_screen_portraint55_3.png', 
   ];
 
   constructor() { }

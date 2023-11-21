@@ -32,7 +32,17 @@ let contentRoutes: Routes = [
       },
       {
         path: 'products',
-        component: ChineseWordBoardComponent,
+        children: [
+          {
+            path: "",
+            redirectTo: 'ChineseWordBoard',
+            pathMatch: "full",
+          },
+          {
+            path: 'ChineseWordBoard',
+            component: ChineseWordBoardComponent,
+          },
+        ]
       },
       {
         path: 'contact',
